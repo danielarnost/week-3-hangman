@@ -67,7 +67,7 @@ var letterInWord = false; // true when in word
 	}
 }
 
-// Here we will have all of the code that needs to be run after each guess is made
+
 // gameComplete() function
 // Here we will have all of the code that needs to be run after each guess is made
 function gameComplete(){
@@ -78,7 +78,8 @@ function gameComplete(){
 	// Update the HTML to reflect the new number of guesses. Also update the correct guesses.
 	document.getElementById("guessesLeft").innerHTML= guessesLeft;
 	document.getElementById("letterBlanks").innerHTML = guessBlanks.join(" "); // This will print the array of guesses and blanks onto the page
-	document.getElementById("wrongGuesses").innerHTML = wrongGuesses.join(" "); // this will print the wrong guesses onto the page.
+	 document.getElementById("wrongGuesses").innerHTML = wrongGuesses.join(" "); // this will print the wrong guesses onto the page.
+
 
 	// If we have gotten all the letters to match the solution... 
 	if (gameWordLetters.toString() == guessBlanks.toString()) {
