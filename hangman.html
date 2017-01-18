@@ -13,7 +13,7 @@
 			<div class = "jumbotron text-center">
 				<h1>Lets play Hangman!</h1>
 				<h2>Click any letter to begin.</h2>
-				<small>*You have nine guesses for each word, use them wisely*</small>
+				<small>*Hint, there is a musical theme and the words are the last names of iconic guitarists*</small>
 			</div>
 		</div>
 
@@ -23,19 +23,19 @@
 					<div class="panel-body">
 						<div class ="col-xs-4 text-center">
 						 <h2 id="guess">Guesses Left:</h2>
-						  <br>
-						   <!-- <span id ="guessesLeft"> --><h2 id="guessesLeft">9</h2><!-- </span> -->
+						
+						   <h2 id="guessesLeft">9</h2>
 						   <br>
 						   <h3> Incorrect Guesses:</h3><br><span id="wrongGuesses"></span>
 						</div>
 						<div class ="col-xs-4 text-center">
-						  <h1>Mystery Word</h1><hr><br><br>
+						  <h1>Mystery Word</h1><hr><br>
 						    <h3 id="letterBlanks">_ _ _ _ _ _ _ _ _ _ </h3>		
 						    </div>
 						<div class ="col-xs-4 text-center">
-							<h2>Score:</h2><br>
-								<h3 id="wins">&nbsp&nbsp&nbspWins:</h3>
-								<h3 id="losses">Losses: </h3>
+							<h2>Score:</h2>
+							<div id="win-row"<h3 id="wins">&nbsp&nbsp&nbspWins: </h3><span id="winCount">0</span>
+							<div id="loss-row"	<h3 id="losses">Losses: </h3></h3><span id="lossCount">0</span>
 						</div>
 			</div>
 		</div>

@@ -21,3 +21,6 @@ hr{
 .panel {
 	border: 1px solid black;
 }
+#win-row{
+	display:inline;
+}
