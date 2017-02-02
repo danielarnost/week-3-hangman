@@ -5,7 +5,7 @@ border: 1px solid black;
 }
 body{
 
-	background-image: /*#1ba5d3*/ url("../images/hangman.png") 
+	background-image: /*#1ba5d3*/ url("../images/hangman.png");
 	font-family: 'Quicksand', sans-serif;
 }
 hr{

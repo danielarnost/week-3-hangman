@@ -84,9 +84,9 @@ function gameComplete(){
 	// If we have gotten all the letters to match the solution... 
 	if (gameWordLetters.toString() == guessBlanks.toString()) {
 		winCount++; // add to the win counter 
-		alert("You win!"); // give the user an alert
+		alert("You Win! the guitarist's name was " + randomGameWord); // give the user an alert
 
-		// Update the win counter in the HTML
+		// Update +the win counter in the HTML
 		document.getElementById("winCount").innerHTML= winCount;
 		startGame(); // restart the game 
 	}
@@ -111,8 +111,15 @@ startGame();
 
 // Then initiates the function for capturing key clicks.
 document.onkeyup = function(event) {
-	letterGuessed = String.fromCharCode(event.keyCode).toLowerCase(); // converts all key clicks to lowercase lettesr
-	
+	 // var regex = /^[a-zA-ZäöüÄÖÜ]*$/;
+	 //  if (!valid) {
+	 //  	e.preventDefault();
+	 //  }
+
+
+	letterGuessed = String.fromCharCode(event.keyCode).toLowerCase(); // converts all key clicks to lowercase lettesr	
 	checkLetters(letterGuessed); // runs the code to check for correctness 
+// } else { (alert("You can only guess letters!"));
 	gameComplete(); // runs the code after each round is done
-}
+
+};
